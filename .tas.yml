@@ -2,7 +2,7 @@
 framework: jest
 blocklist:
   - "./src/newFileTest.test.js##Comparision tests"
-licenseTier: xsmall
+licenseTier: small
 postMerge: 
   pattern: 
     - "./src/*.test.js"
