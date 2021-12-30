@@ -2,7 +2,7 @@ const getAboutUsLink = require("./calculator");
 
 
 test("Retuns about-us for english language", () => {
-    expect(getAboutUsLink("en-US")).toBe("/about-us");
+    expect(getAboutUsLink(process.env.ENGLISH_CODE)).toBe("/about-us");
 });
 
 test("Returns about-us for spanish language", () => {
