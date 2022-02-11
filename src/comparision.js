@@ -9,7 +9,10 @@ const comparisionOperation = {
 
     less: function (a, d) {
         return a < d;
+    },
+
+    lessThanEqual: function (a, d) {
+        return a <= d;
     }
 }
-
 module.exports = comparisionOperation
