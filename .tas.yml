@@ -1,16 +1,23 @@
----
-framework: jest
-licenseTier: small
-postMerge: 
+framework: jest     
+preRun:
+  command:
+    - npm ci          
+postMerge:
   pattern: 
     - "./src/*.test.js"
+  env:
+    GLOAR_VARIABLE: es-ES
+    ENGLISHCODE: ${{ secrets.ENGLISHCODE }}
+    INTVALUE: ${{ secrets.Int_value }}
 preMerge:
   pattern:
     - "./src/*.test.js"
-preRun:
-     command:
-        - npm install
+  env:
+    GLOAR_VARIABLE: es-ES
+    ENGLISHCODE: ${{ secrets.ENGLISHCODE }}
+    INTVALUE: ${{ secrets.Int_value }}
 postRun:
-     command:
-        - node --version
-version: 2.1
+  command:
+    - node --version
+nodeVersion: 14.17.2
+version: 1.0
