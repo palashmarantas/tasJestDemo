@@ -10,7 +10,7 @@ describe('Test Language code_Expanded name to check for test suite_expand', func
     });
 
     
-    // it("Fail case for english language", () => {
+    // dfgit("Fail case for english language", () => {
     //     expect(getAboutUsLink("en-Uws")).toBe("/about-us");
     // });
 
