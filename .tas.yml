@@ -1,14 +1,9 @@
 ---
 framework: jest
-blocklist:
-  - "./src/newFileTest.test.js##Comparision tests"
 licenseTier: small
 postMerge: 
   pattern: 
     - "./src/*.test.js"
-  strategy: 
-    threshold: <5|100s|30m|6h>
-    type: <commit|time>
 preMerge:
   pattern:
     - "./src/*.test.js"
@@ -17,6 +12,5 @@ preRun:
         - npm install
 postRun:
      command:
-        - node --version
         - node --version
 version: 2.1
