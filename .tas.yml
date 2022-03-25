@@ -1,4 +1,6 @@
-framework: jest     
+framework: jest
+blocklist:
+  - "./src/calculatorWithSuite.test.js##Test Language code_Expanded name to check for test suite_expand"
 preRun:
   command:
     - npm ci          
